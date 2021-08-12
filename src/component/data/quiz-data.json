@@ -1,0 +1,59 @@
+[
+    {
+      "category": "History",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "When was ruby language started?",
+      "correct_answer": "1995",
+      "incorrect_answers": [
+        "1990",
+        "2012",
+        "None of the Above"
+      ]
+    },
+    {
+      "category": "History",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "What is the purpose of Africa Ruby Community",
+      "correct_answer": "Build Communities",
+      "incorrect_answers": [
+        "All About Ruby",
+        "Ruby Devs",
+        "To gain Knowledge"
+      ]
+    },
+    {
+      "category": "Knowledge",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Which community gave birth to the African Ruby Community",
+      "correct_answer": "Nairuby",
+      "incorrect_answers": ["BantaMik", "Shopify", "None of the Above"]
+    },
+    {
+      "category": "Trivia",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Who was our first speaker at the beginning of the session",
+      "correct_answer": "Promise Chukwuenyem",
+      "incorrect_answers": [
+        "Kalebu Jordan",
+        "Chris Nyaga",
+        "Raphael"
+      ]
+    },
+    {
+      "category": "Trivia",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Which speaker took us through Opensource",
+      "correct_answer": "Kalebu Gwalugano",
+      "incorrect_answers": [
+        "Benard Banta",
+        "Chris Nyaga",
+        "Raphael"
+      ]
+    }
+  ]
+  
