@@ -1,17 +1,18 @@
+import './QuestionPanel.css';
+
 import React,{useState} from 'react';
-import {lighten, makeStyles } from '@material-ui/core/styles';
+import {lighten, makeStyles} from '@material-ui/core/styles';
+
+import BorderLinearProgress from '@material-ui/core/LinearProgress'
+import Button from '@material-ui/core/Button';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import Divider from '@material-ui/core/Divider';
-import Button from '@material-ui/core/Button';
-import Typography from '@material-ui/core/Typography';
 import StarFillIcon from '@material-ui/icons/StarOutlined';
 import StarOutlineIcon from '@material-ui/icons/StarBorderOutlined';
-import BorderLinearProgress from '@material-ui/core/LinearProgress'
-import './QuestionPanel.css';
-
+import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles({
   root: {
@@ -45,7 +46,7 @@ export default function QuestionPanel({question, nextQuestion, total, questionNo
   const handleAnswer = (ans) =>{
     setAnswered(ans);
     checkUserAnswer(ans);
-    if(decodeURIComponent(question['correct_answer'])==ans){
+    if(decodeURIComponent(question['correct_answer'])===ans){
       setMessage('Correct!')
     }
     else{

@@ -1,8 +1,9 @@
-import React, {Component}from 'react';
-import data from '../data/quiz-data.json';
-import QuestionPanel from '../QuestionPanel/QuestionPanel';
 import './Home.css';
 
+import React, {Component}from 'react';
+
+import QuestionPanel from '../QuestionPanel/QuestionPanel';
+import data from '../data/quiz-data.json';
 
 class Home extends Component {
     state = { 
@@ -31,7 +32,7 @@ class Home extends Component {
      }
      checkUserAnswer = (userAns) =>{
         const {current_question,current_question_no ,currectAnswered,wrongAnswered , total_question_no} = this.state;
-        if(decodeURIComponent(current_question['correct_answer'])==userAns){
+        if(decodeURIComponent(current_question['correct_answer'])===userAns){
             this.setState({currectAnswered:currectAnswered+1});
 
             const _score =(((currectAnswered +1) / (current_question_no)) * 100).toFixed(2);
